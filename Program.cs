@@ -3,14 +3,14 @@ string[] array = Console.ReadLine()!.Split(',');
 string[] cutTheArray(string[] input, int cutNumber)
 {
     string temp = "";    
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < input.Length; i++)
     {
-        array[i] = array[i].Trim(' ');
-        if (array[i].Length <= cutNumber)
+        input[i] = input[i].Trim(' ');
+        if (input[i].Length <= cutNumber)
             {
                 if (temp.Length != 0)
                     temp += ",";
-                temp += array[i];
+                temp += input[i];
             }
     }
     string[] arr = temp.Split(',');

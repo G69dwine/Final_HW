@@ -16,4 +16,4 @@ string[] cutTheArray(string[] input, int cutNumber)
     string[] arr = temp.Split(',');
     return arr;
 }
-Console.WriteLine($"[{string.Join(',', array)}] → [{string.Join(',', cutTheArray(array, 3))}]");
+Console.WriteLine($"[{string.Join(",", array)}] → [{string.Join(", ", cutTheArray(array, 3))}]");

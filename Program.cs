@@ -8,7 +8,7 @@ string[] cutTheArray(string[] input, int cutNumber)
         input[i] = input[i].Trim(' ');
         if (input[i].Length <= cutNumber && input[i] != "")
                 temp += input[i] + ',';
-    }
+    } 
     temp = temp.Remove(temp.Length-1);
     string[] arr = temp.Split(',');
     Console.WriteLine(temp);
